@@ -1,313 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unity SACCO | Community Savings and Credit</title>
-
-  <!-- ✅ Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* Reset and Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Poppins", Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-
-    /* 🌅 Hero Section */
-    .hero {
-      position: relative;
-      background: url('sacco-bg.jpg') center/cover no-repeat;
-      height: 85vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin: 15px 0 25px;
-    }
-
-    /* 💰 Services Section */
-    #services .card {
-      border: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    #services .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    /* 🧩 About Section */
-    #about img {
-      border-radius: 10px;
-    }
-
-    /* 📋 Membership Section */
-    #membership {
-      background-color: #e9f5ff;
-      padding: 70px 0;
-    }
-
-    #membership h2 {
-      color: #0d6efd;
-    }
-
-    /* 📬 Contact Section */
-    #contact form input,
-    #contact form textarea {
-      border-radius: 10px;
-    }
-
-    /* ⚓ Footer */
-    footer {
-      background-color: #0d6efd;
-      color: white;
-      padding: 20px 0;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-/* 🌄 Hero Section with Background Image */
-.hero {
-  position: relative;
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-}
-
-/* The background image */
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(60%); /* darkens the image slightly */
-  z-index: 0;
-}
-
-/* Text content above the image */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-}
-
-.hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
-}
-
-.hero a {
-  z-index: 1;
-}
-
-
-  </style>
-</head>
-
-<body>
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumaine Dresses</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1400x500?text=Sumaine+Dresses+Collection') no-repeat center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 5px #000;
+        }
+        .product-card img {
+            height: 280px;
+            object-fit: cover;
+        }
+        footer {
+            background: #222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sumaine Dresses</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- ✅ Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-3" href="#">Unity SACCO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+    <!-- Hero Section -->
+    <!-- Hero Video Slider -->
+<section id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
+      <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+              <video class="w-100" autoplay muted loop>
+                  <source src="😍look it😍.mp4" type="video/mp4">
+              </video>
+              <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                  <h1 class="display-4 fw-bold text-white text-shadow">Elegant. Stylish. Sumaine Dresses.</h1>
+              </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+              <video class="w-100" autoplay muted loop>
+                  <source src="Pin on Akash.mp4" type="video/mp4">
+              </video>
+              <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                  <h1 class="display-4 fw-bold text-white text-shadow">Discover Your Perfect Look</h1>
+              </div>
+               <!-- Slide 3 -->
+          <div class="carousel-item">
+            <video class="w-100" autoplay muted loop>
+                <source src="Elegant Emerald White Gown for Fall Weddings 2025.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                <h1 class="display-4 fw-bold text-white text-shadow">Discover Your Perfect Look</h1>
+            </div>
+          </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#membership">Membership</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!-- ✅ Hero Section -->
-<section id="hero" class="hero">
-    <img src="COINS.jpg" 
-                 class="hero-bg">
-    <div class="hero-content text-center">
-      <h1>Welcome to Unity SACCO</h1>
-      <p>Together, we build stronger bonds and a brighter future for everyone.</p>
-      <a href="#about" class="btn btn-light btn-lg mt-3">Learn More</a>
-    </div>
-  </section>
-  
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+</section>
 
-  <!-- ✅ About Section -->
-  <section id="about" class="py-5 bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img src="ACCOUNTING.jpg" alt="About SACCO" class="img-fluid shadow">
-        </div>
-        <div class="col-md-6">
-          <h2 class="fw-bold mb-3 text-primary">About Unity SACCO</h2>
-          <p>Unity SACCO is a community-based cooperative organization focused on improving financial stability and inclusion for our members. We provide access to affordable loans, secure savings, and financial literacy programs.</p>
-          <p>Founded in 2015, we have helped hundreds of families and entrepreneurs achieve their financial goals through trust, transparency, and teamwork.</p>
-          <a href="#membership" class="btn btn-primary mt-3">Join Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Collection Section -->
+    <section class="py-5" id="collection">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Our Collection</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="3c4c2bf807b96e4307f0dcff6b6dde70.jpg" class="card-img-top" alt="Dress 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer Floral Dress</h5>
+                            <p class="card-text">Light, stylish, and perfect for any outing.</p>
+                            <p class="fw-bold text-success">UGX 85,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="2723dd57fb34b49ffef58886cccdbd67.jpg" class="card-img-top" alt="Dress 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Evening Gown</h5>
+                            <p class="card-text">Elegant design for special occasions.</p>
+                            <p class="fw-bold text-success">UGX 150,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="7d5ea88b42826db92315f21b7e4efaca.jpg" class="card-img-top" alt="Dress 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Black Dress</h5>
+                            <p class="card-text">Timeless fashion for all seasons.</p>
+                            <p class="fw-bold text-success">UGX 95,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="78363694fa17fe1ce44d4389a541a27f.jpg" class="card-img-top" alt="Dress 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Elegant Wedding Dress</h5>
+                            <p class="card-text">Perfect choice for your special day.</p>
+                            <p class="fw-bold text-success">UGX 350,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- ✅ Services Section -->
-  <section id="services" class="py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="SAVINGS.jpg" class="card-img-top" alt="Savings">
-            <div class="card-body">
-              <h5 class="card-title">Savings Accounts</h5>
-              <p class="card-text">Grow your wealth with secure and flexible savings options designed for members’ financial goals.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="NOTES.jpg" class="card-img-top" alt="Loans">
-            <div class="card-body">
-              <h5 class="card-title">Affordable Loans</h5>
-              <p class="card-text">Access quick and low-interest loans to support your business, education, or personal needs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="PROFIT.jpg" class="card-img-top" alt="Investment">
-            <div class="card-body">
-              <h5 class="card-title">Investment Opportunities</h5>
-              <p class="card-text">Join community-driven investment projects that deliver reliable returns and social impact.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <!-- Additional New Collections -->
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="8c323e617771736063eb9a2f4fd021a9.jpg" class="card-img-top" alt="Dress 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Casual Cotton Dress</h5>
+                            <p class="card-text">Soft, breathable, and comfortable.</p>
+                            <p class="fw-bold text-success">UGX 65,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- ✅ Membership Section -->
-  <section id="membership">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3">Become a Member</h2>
-      <p class="lead mb-4">Joining Unity SACCO means being part of a trusted family that values growth and financial freedom.</p>
-      <ul class="list-unstyled">
-        <li>✔️ Open to all community members aged 18 and above</li>
-        <li>✔️ Easy account opening process</li>
-        <li>✔️ Transparent and member-focused services</li>
-      </ul>
-      <a href="#contact" class="btn btn-primary mt-4">Apply Now</a>
-    </div>
-  </section>
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="89e64e0b7bfaa17d488fde01961a3074.jpg" class="card-img-top" alt="Dress 6">
+                        <div class="card-body">
+                            <h5 class="card-title">African Kitenge Dress</h5>
+                            <p class="card-text">Bold patterns for cultural elegance.</p>
+                            <p class="fw-bold text-success">UGX 120,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
 
- <!-- ✅ Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Contact Us</h2>
-      <p>We’d love to hear from you! Send us a message or visit our offices for inquiries.</p>
-      <div class="row justify-content-center mt-4">
-        <div class="col-md-8">
-          <!-- ✅ FormSubmit Form -->
-          <form action="https://formsubmit.co/isaaczisriz5@gmail.com" method="POST">
-            <!-- Hidden FormSubmit Options -->
-            <input type="hidden" name="_subject" value="New Membership Request from Unity SACCO">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="box">
-  
-            <div class="mb-3">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="9a898dc9f6234d5aa21712e700d3f413.jpg" class="card-img-top" alt="Dress 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Office Pencil Dress</h5>
+                            <p class="card-text">Smart and classy professional wear.</p>
+                            <p class="fw-bold text-success">UGX 110,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card shadow-sm">
+                        <img src="26cb8a41eb7d10a2cb59ad597e8f6228.jpg" class="card-img-top" alt="Dress 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Silk Dress</h5>
+                            <p class="card-text">Premium silk fabric for a rich feel.</p>
+                            <p class="fw-bold text-success">UGX 280,000</p>
+                            <button class="btn btn-dark w-100">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-              <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary px-4">Send Message</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
-  
-      
+    </section>
 
-  <!-- ✅ Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p class="mb-1">© 2025 Unity SACCO. All Rights Reserved.</p>
-      <div>
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="#">Instagram</a> | 
-        <a href="mailto:unitysacco@example.com">Email Us</a>
-      </div>
-    </div>
-  </footer>
+    <!-- About Section -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">About Us</h2>
+            <p class="lead text-center">Sumaine Dresses is dedicated to providing stylish, comfortable, and high‑quality dresses for women of all tastes. Our designs blend elegance with modern fashion to create the perfect look for any occasion.</p>
+        </div>
+    </section>
 
-  <!-- ✅ Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Contact Us</h2>
+            <p>Email: info@sumaine.com | Phone: +256 700 000000</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <p>&copy; 2025 Sumaine Dresses. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
